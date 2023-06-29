@@ -1,0 +1,46 @@
+span.seat {
+  --normal-offset: 33px;
+  --seat-number: 1;
+  --row: 1;
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  background-size: 100%;
+  border-radius: 4px;
+  border: 1px solid #c9c9c9;
+  background-color: white;
+  offset-distance: calc((var(--normal-offset) * var(--seat-number)));
+}
+span.seat:hover {
+  border: 1px solid #09acd141;
+  background-color: #09acd141;
+}
+/* todo: 5 estados, comprado, en reserva, clickeado, comprado por el usuario, normal */
+span.seat.seat--purchased {
+  background-color: #c9c9c9;
+  cursor: default;
+  background-image: url(../img/people.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95%;
+}
+span.seat.seat--booked {
+  color: #434d55;
+  background-image: url(../img/shopcart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+}
+span.seat.seat--selected {
+  background-color: var(--accent-100);
+}
+span.seat.seat--purchased-by-user {
+  border: 1px solid #09acd141;
+  background-color: #09acd141;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95%;
+  background-image: url(../img/people_blue.svg);
+}

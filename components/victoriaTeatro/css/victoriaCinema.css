@@ -1,0 +1,116 @@
+.victoria-cinema__platea {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+.victoria-cinema__row-left {
+  rotate: 10deg;
+}
+.victoria-cinema__row-right {
+  rotate: -10deg;
+}
+.victoria-cinema__column-2 {
+  margin-top: 8px;
+}
+.victoria-cinema__column-character {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0px;
+  height: 100%;
+  margin-top: 9px;
+}
+.victoria-cinema__numeros {
+  /* max-width: 600px; */
+  display: grid;
+  grid-auto-rows: 30px;
+  grid-template-columns: 32px 32px 32px 20px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 20px 32px 32px 32px;
+  grid-template-rows: 30px;
+  gap: 4.5px;
+  width: 100%;
+  grid-template-areas: ". . . . . . . . .";
+}
+.victoria-cinema__numeros span {
+  line-height: 30px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.victoria-cinema__column-character span {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: bold;
+  height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.victoria-cinema__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 632px;
+  margin: auto;
+  /* overflow: auto;
+  height: 600px; */
+}
+.victoria-cinema__escenario {
+  height: 80px;
+  width: 400px;
+  color: #333333;
+  text-align: center;
+  line-height: 70px;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-image: linear-gradient(-45deg, #09aed1 0%, #0091b3 100%);
+  border-radius: 10px 10px 100% 100% / 10px 10px 100% 100%;
+}
+.victoria-cinema__bottom {
+  background-image: url("../img/background.svg");
+  /* background-image: linear-gradient(-45deg, #09aed1 0%, #0091b3 100%); */
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 800px;
+  margin-top: 40px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  height: 90px;
+}
+.victoria-cinema__bottom.--left {
+  rotate: 90deg;
+  bottom: 135px;
+  width: 400px;
+  position: absolute;
+  left: -250px;
+  height: 170px;
+  margin: 0;
+  border-radius: 0% 0% 50% 0% / 0% 0% 100% 0%;
+  background-image: url("../img/background-2.svg");
+  /* background-image: linear-gradient(-45deg, #09aed1 0%, #0091b3 100%); */
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.victoria-cinema__bottom.--right {
+  background-image: url("../img/background-2.svg");
+  /* background-image: linear-gradient(-45deg, #09aed1 0%, #0091b3 100%); */
+  background-position: top;
+  background-repeat: no-repeat;
+  rotate: -90deg;
+  bottom: 135px;
+  width: 400px;
+  height: 170px;
+  margin: 0;
+  position: absolute;
+  border-radius: 0% 0% 0% 50% / 0% 0% 0% 100%;
+  right: -250px;
+}

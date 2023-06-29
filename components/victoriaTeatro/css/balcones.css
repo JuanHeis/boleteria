@@ -1,0 +1,69 @@
+.victoria-cinema__right .victoria-cinema__seat-cluster {
+  --offset: 1px;
+  position: absolute;
+  transform: rotate(120deg);
+  offset-path: path(
+    "M 0 616 Q 285.748 614.131 398 537 C 510.252 459.869 435.502 390.463 421 268 Q 406.498 145.537 412 0"
+  );
+  offset-distance: calc(100% - var(--offset));
+}
+.victoria-cinema__left .victoria-cinema__seat-cluster {
+  --offset: 1px;
+  position: absolute;
+  transform: rotate(120deg);
+  offset-path: path(
+    "M 0 616 Q 285.748 614.131 398 537 C 510.252 459.869 435.502 390.463 421 268 Q 406.498 145.537 412 0"
+  );
+  offset-distance: calc(100% - var(--offset));
+}
+.victoria-cinema__seat-cluster.--four-seats {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px 4px;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
+.victoria-cinema__container.--balcones .victoria-cinema__seat_container {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.victoria-cinema__container.--balcones {
+  width: auto;
+  height: auto;
+}
+.victoria-cinema__center {
+  position: absolute;
+  height: 570px;
+  width: 570px;
+  border-radius: 25px;
+  background-image: url("../img/plateas.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  top: 00px;
+  left: calc(50% - 285px);
+}
+.victoria-cinema__left {
+  transform: rotateY(180deg);
+}
+.victoria-cinema__right,
+.victoria-cinema__left {
+  position: relative;
+  width: 510px;
+  height: 680px;
+}
