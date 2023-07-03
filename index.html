@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="module" src="./components/victoriaTeatro/victoriaTeatro.js"></script>
-    <script src="./ubicaciones.js"></script>
+    <!-- <script type="module" src="./components/victoriaTeatro/victoriaTeatro.js"></script> -->
+    <script type="module" src="./components/map-location.js"></script>
+    <!-- <script src="./ubicaciones.js"></script> -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    <victoria-teatro login="false" seatDetail="{}"></victoria-teatro>
-
-
+    <!-- <victoria-teatro login="false" seatDetail="{}"></victoria-teatro> -->
+    <map-location no_login="false" template="https://media.boleteriadigital.com.ar/desarrollo/files/entradas/assets/cine_victoria/platea.html" ></map-location>
+    <script> window.no_login = false</script>
 </body>
 </html>
